@@ -11,4 +11,4 @@ jobs: # Robotun yapacağı ana işler buraya yazılır.
         uses: actions/checkout@v4 # Projenin kodlarını robotun bilgisayarına kopyalamak için hazır bir Action kullan.
 
       - name: Terminalde Mesaj Yazdır # İkinci adımın adı.
-        run: echo "Deneme robotum çalıştı ve bu mesajı gösteriyor!" # Terminale bu mesajı yazdıracak bir komut çalıştır.
+        run: echo "Deneme robotum çalıştı ve bu mesajı gösteriyor!!!" # Terminale bu mesajı yazdıracak bir komut çalıştır.git add .
