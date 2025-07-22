@@ -1,0 +1,30 @@
+train: ./datasett
+val: ./datasett
+
+nc: 25
+names:
+  - dimes_karisik
+  - dimes_kayisi
+  - dimes_visne
+  - dogus_bergamot
+  - dogus_earlgrey
+  - dogus_gurme
+  - dogus_karadeniz
+  - dogus_kupseker
+  - dogus_rize
+  - dogus_yesilcay
+  - frutti_elmali
+  - frutti_limonlu
+  - frutti_nar
+  - kahve_filtre
+  - uludag_gazoz
+  - frutti_limonlu_altili
+  - frutti_narli_altili
+  - kizilay_sade_altili
+  - kizilay_sade
+  - hazir_gold_kahve_200g
+  - kahve_beyazlaticisi
+  - hazir_gold_kahve
+  - turk_kahvesi
+  - sleepy_bebek_mendili
+  - sleepy_yuzey_temizlik_mendili

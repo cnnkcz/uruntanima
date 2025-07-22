@@ -1,0 +1,14 @@
+name: Deneme Robotu # Bu robotun GitHub'da görünecek adı.
+
+on: [push] # Bu robot ne zaman çalışsın? Ne zaman GitHub'a kod yüklersen (push edersen) çalışsın.
+
+jobs: # Robotun yapacağı ana işler buraya yazılır.
+  ilk_test_isi: # Bu işin adı (sen belirleyebilirsin).
+    runs-on: ubuntu-latest # Bu işi hangi bilgisayarda çalıştıralım? GitHub'ın kendi sağladığı, en son çıkan Ubuntu bilgisayarında çalışsın.
+
+    steps: # Bu işin içindeki adımlar.
+      - name: Kodumu Kopyala # Birinci adımın adı.
+        uses: actions/checkout@v4 # Projenin kodlarını robotun bilgisayarına kopyalamak için hazır bir Action kullan.
+
+      - name: Terminalde Mesaj Yazdır # İkinci adımın adı.
+        run: echo "Deneme robotum çalıştı ve bu mesajı gösteriyor!" # Terminale bu mesajı yazdıracak bir komut çalıştır.

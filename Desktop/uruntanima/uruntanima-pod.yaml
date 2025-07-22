@@ -1,0 +1,11 @@
+apiVersion: v1 #Kubernetes API’nin hangi sürümünü kullandığımızı belirtir.
+kind: Pod #Oluşturmak istediğimiz kaynak türü, burada basit bir Pod.
+metadata: #Pod hakkında isim ve etiket gibi bilgiler içerir.
+  name: uruntanima-pod
+spec: #Pod’un nasıl çalışacağı ile ilgili detayları içerir.
+  containers: #Pod içinde hangi container’ların çalışacağını listeler.
+  - name: uruntanima-container #Container’a verilen isim.
+    image: nginx:alpine #Bu container’da çalışacak imaj. Burada hafif bir Nginx web sunucusu kullanıyoruz.
+    ports: #Container’ın dışa açtığı portları belirtir
+    - containerPort: 80
+  
